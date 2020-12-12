@@ -1,0 +1,6 @@
+Primary.
+IO All = lOw
+IO 1 = High
+IO 5 = High
+AC source 80V
+IO 5 = Low

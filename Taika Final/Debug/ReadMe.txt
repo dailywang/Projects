@@ -1,0 +1,2 @@
+March.21.2017
+Change set DIO output way from line write to port write, beacuse ATE 1 DIO output voltage level is about 1.2Vdc(other ATEs are 2.7V) when connected Taika ATE adapter, and there is an action in line write.vi that read previous state of DIO port and then combine with new line state. So if voltage is 1.2V, it's the logic low level, and return previous port state is always o. So the line write.vi only can set current line, and previous others will be reset to 0 in ATE 1.
